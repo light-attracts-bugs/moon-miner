@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setInterval(calcCheese, 1000)" class = "container">
+  <header class="row justify-content-center">
+    <h1>Moon Miner</h1>
+  </header>
+
+  <section class="row top-row">
+    <div class="col">
+      <p id="CPS">cheese per second</p>
+      <p id="CPC">cheese per click</p>
+    </div>
+    <div class="col">
+      <button id="img-button" type="button"><img id="mine" onclick="mine()" src="cartoon-asteroid-png-3.png" /></button>
+    </div>
+    <div class="col">
+      <h3 id="cheese">cheese</h3>
+      <p id="enhanced-pick"></p>
+      <p id="auto-picks">picks</p>
+      <p id="rovers">rovers</p>
+      <p id="cheese-drills">cheese drills</p>
+
+    </div>
+  </section>
+  <section class="row">
+    <div class="col">
+      <h6 id="pick-enhancement-price"></h6>
+      <button type="button" id="enhanced-pick" onclick="buyPickEnhancement()" class="btn btn-warning">Buy Enhanced Pick +1 CPC</button>
+
+    </div>
+    <div class="col">
+      <h6 id="auto-pick-price"></h6>
+      <button type="button" id="auto-pick" onclick="buyAutoPick()" class="btn btn-warning">Buy Auto-Pick +1 CPS</button>
+      
+    </div>
+    <div class="col">
+      <h6 id="rover-price"></h6>
+      <button type="button" id="rover" onclick="buyRover()" class="btn btn-warning">Buy Rover +3 CPS</button>
+
+    </div>
+    <div class="col">
+      <h6 id="cheese-drill-price"></h6>
+      <button type="button" id="cheese-drill" onclick="buyCheeseDrill()" class="btn btn-warning">Buy Cheese Drill +10 CPS</button>
+
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
