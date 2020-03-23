@@ -30,10 +30,10 @@ function draw(){
   let cheeseDrillPriceElem = document.getElementById("cheese-drill-price")
 
   cheeseElem.innerText = "Cheese: " + cheese
-  pickEnhancementsElem.innerText = "Pick Enhancements: " + pickEnhancements
-  autoPicksElem.innerText = "Auto-Picks: " + autoPicks
-  roversElem.innerText = "Rovers: " + rovers
-  cheeseDrillsElem.innerText = "Cheese Drills: " + cheeseDrills
+  pickEnhancementsElem.innerText = "Pick Enhancements: " + pickEnhancements + " CPC: " + pickEnhancements
+  autoPicksElem.innerText = "Auto-Picks: " + autoPicks + " CPS: " + autoPicks * autoPickCPS
+  roversElem.innerText = "Rovers: " + rovers + " CPS: " + rovers * roverCPS
+  cheeseDrillsElem.innerText = "Cheese Drills: " + cheeseDrills + " CPS " +  cheeseDrills * cheeseDrillCPS
   CPCElem.innerText = "Cheese Per Click: " + CPC
   CPSElem.innerText = "Cheese Per Second " + (CPS)
   pickEnhancementPriceElem.innerText = "Price: " + pickEnhancementPrice
