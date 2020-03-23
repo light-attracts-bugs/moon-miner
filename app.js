@@ -34,8 +34,8 @@ function draw(){
   autoPicksElem.innerText = "Auto-Picks: " + autoPicks + " CPS: " + autoPicks * autoPickCPS
   roversElem.innerText = "Rovers: " + rovers + " CPS: " + rovers * roverCPS
   cheeseDrillsElem.innerText = "Cheese Drills: " + cheeseDrills + " CPS " +  cheeseDrills * cheeseDrillCPS
-  CPCElem.innerText = "Cheese Per Click: " + CPC
-  CPSElem.innerText = "Cheese Per Second " + (CPS)
+  CPCElem.innerText = "CPC (cheese cer click): " + CPC
+  CPSElem.innerText = "CPS (cheese per second): " + (CPS)
   pickEnhancementPriceElem.innerText = "Price: " + pickEnhancementPrice
   autoPickPriceElem.innerText = "Price: " + autoPickPrice
   roverPriceElem.innerText = "Price: " + roverPrice
